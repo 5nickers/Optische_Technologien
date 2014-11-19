@@ -1,0 +1,73 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+\subsection*{a)}
+
+Die Transmission ist beschrieben durch:
+
+\begin{align*}
+T_\perp &= e^{-\mu_\perp \cdot d} \\
+T_\parallel &= e^{-\mu_\parallel \cdot d} \\
+\end{align*}
+
+
+\subsection*{b)}
+
+Man kann die Folie dicker machen, allerdings geht dann auch die Transmission der anderen Polarisation runter. Man muss also einen guten Mittelweg finden.
+
+
+\subsection*{c)}
+
+\begin{itemize}
+	\item[1)] wenn man zwei Polarisatoren kreuzt, dann sollte die Auslöschung bei $E > 5$ liegen. \\ $E = -\log(T)$
+	\item[2)] parallel muss die maximale Transmission durch die Polarisatoren kommen
+\end{itemize}
+
+Gute Polfilter lassen $\approx \unit[40]{\%}$ des Lichtes durch. Ideal wären $\approx \unit[50]{\%}$, aber wegen Reflexionsverlusten ist das nicht möglich.
+
+
+
+\section{Aufgabe 2}
+
+Wir nehmen einen Laser mit der Wellenlänge $\lambda = \unit[633]{nm}$. Dann können wir recht einfach die Dick berechnen:
+
+\begin{align*}
+d \cdot \Delta n &= \frac{\lambda}{4} \\
+\Leftrightarrow d &= \frac{\lambda}{4 \cdot |n_o - n_e|} = \frac{633 \cdot 10^{-9}}{4 \cdot 0,0091} = \unit[17,39]{\mu m}
+\intertext{Da eine solche Dicke schwer zu realisieren ist, behilft man sich mit einem Trick:}
+d_{ges} &= d_{\lambda/4} + m \cdot d_{\lambda}
+\end{align*}
+
+Das heißt man nimmt die Dicke der $\lambda/4$ Platte und macht sie um ganzzahlige Lambdadicken dicker, da ganzzahlige nichts am Plattenverhalten ändern. Dabei kommen natürlich Ungenauigkeiten hinzu, weshalb es eine teurer Alternative gibt. \\
+Die Alternative verwendet eine Platte mit  $d_{ges} = d_{\lambda/4} + m \cdot d_{\lambda}$ und eine mit $d_{ges} = - m \cdot d_{\lambda}$. Dabei wird der \grqq Überhang\grqq \  der ersten Platte durch die zweite kompensiert und man hat reine $\lambda/4$.
+
+
+\section{Aufgabe 3}
+
+Aus der Vorlesung wissen wir, das bei $\theta = \unit[0]{^\circ}$ zirkular polarisiertes Licht entsteht und es bei $\theta = \unit[90]{^\circ}$ maximal elliptisch ist bzw. der außerordentliche Anteil am größten wird.
+
+
+
+
+
+
+
+
+\end{document}
