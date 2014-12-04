@@ -1,0 +1,81 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+
+Wir betrachten eine Glasscheibe die mit einer Antireflexschicht aus $MgF_2$ bedampft ist. Die Schicht hat einen Brechungsindex von $n_{AR} = 1,38$ und wirkt gegen die Wellenlänge $\lambda = \unit[550]{nm}$. Zunächst bestimmen wir die Dicke der Antireflexschicht:
+
+\begin{align*}
+d &= \frac{\lambda_0}{4 \cdot n_{AR}} = \frac{550 \cdot 10^{-9}}{4 \cdot 1,38} = \unit[99,6]{nm}
+\intertext{Diese Schicht erzeugt einen Ganunterschied von $\frac{\lambda}{2} = \unit[275]{nm}$. Der Phasenunterschied ist dann:}
+\phi &= \frac{2 \pi}{\lambda} \cdot 275 = \frac{\pi \cdot 550}{\lambda}
+\intertext{Mit dem Wissen, das $I \sim \cos^2 \left( \frac{\phi}{2} \right)$ ist, können wir den Verlauf der Intensität abhängig von der Phasenverschiebung darstellen. Beispielhaft habe ich eine Tabelle gebaut:}
+\end{align*}
+
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		 $\lambda$ & $\phi$ & $I$ \\ 
+		 \hline
+		400  &  &  \\ 
+		$\vdots$  &  &  \\ 
+	    700	 &  &  \\ 		
+	\end{tabular} 
+\end{center}
+
+Wenn man das plottet, dann erhält man einen Graphen , der bei $\unit[550]{nm}$ ein Minimum haben sollte.
+
+Nun schauen wir uns noch an wie gut die Antireflexionsschicht das reflektierte Licht reduziert.
+
+
+\begin{figure}[h]
+	\begin{minipage}[hbt]{5cm}
+		\centering
+		\includegraphics[width=5cm]{A1_1.jpg}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[hbt]{7cm}
+		\centering
+		\includegraphics[width=7cm]{A1_2.jpg}
+	\end{minipage}
+\end{figure}
+
+
+Bei dem Glas ohne Reflexionsschicht erhalten wir nach $I \sim E^2$:
+
+\begin{align*}
+0,2^2 = 0,04 = \unit[4]{\%}
+\intertext{Bei Glas mit Reflexionsschicht gilt für den Reflexionsgrad:}
+R &= \frac{1,38 - 1}{1,38 + 1} = 0,159 = \unit[16]{\%} = E_0
+\intertext{Die intensität ist dann:}
+A_{eff} &= 2 \cdot E_0 \cdot \cos \left( \frac{\phi}{2} \right) = 32 \cdot \cos \left( \frac{\phi}{2} \right) \\
+I &\sim A_{eff}^2 = 4 \cdot E_0^2 \cdot \cos^2 \left( \frac{\phi}{2} \right)
+\end{align*}
+
+Wenn wir uns die Phasenverschiebung mit $\frac{\pi \cdot 550}{\lambda}$ anschauen, dann erkennen wir, dass sich die Phasenverschiebung zu kleinen Wellenlängen stärker ändert als zu großen.
+
+
+
+
+
+
+
+
+
+
+\end{document}
